@@ -3,9 +3,9 @@ name: Build & Release
 on:
   push:
     branches: [main]
+    tags: ['v*']
   pull_request:
     branches: [main]
-  # Trigger release on version tags
   workflow_dispatch:
 
 permissions:
